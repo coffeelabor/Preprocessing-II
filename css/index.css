@@ -1,4 +1,3 @@
-@mobile (max-width: 500px);
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -182,6 +181,15 @@ img {
   align-items: center;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .nav-bar {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
 .nav-bar nav {
   display: flex;
   justify-content: space-around;
@@ -206,6 +214,24 @@ img {
 }
 .home .top-content {
   border-bottom: 2px dashed #c0c0c0;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (max-width: 500px) {
+  .home .top-content {
+    padding-left: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+  }
+  .home .top-content h2,
+  .home .top-content h3,
+  .home .top-content h4 {
+    display: flex;
+    align-self: flex-start;
+  }
 }
 .home .top-content h2 {
   padding-top: 10px;
@@ -217,13 +243,58 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+  }
+  .home .content-section h2,
+  .home .content-section h3,
+  .home .content-section h4 {
+    display: flex;
+    align-self: flex-start;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+  }
+  .home .content-section .text-content h2,
+  .home .content-section .text-content h3,
+  .home .content-section .text-content h4 {
+    display: flex;
+    align-self: flex-start;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+  }
+  .home .content-section .img-content h2,
+  .home .content-section .img-content h3,
+  .home .content-section .img-content h4 {
+    display: flex;
+    align-self: flex-start;
+  }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
@@ -247,15 +318,64 @@ img {
 .home .content-destination img {
   border-radius: 10px;
 }
+@media (max-width: 500px) {
+  .home .content-destination {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+  }
+  .home .content-destination h2,
+  .home .content-destination h3,
+  .home .content-destination h4 {
+    display: flex;
+    align-self: flex-start;
+  }
+}
 .home .content-pick {
   padding-top: 30px;
   border-top: 2px dashed #c0c0c0;
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+  }
+  .home .content-pick h2,
+  .home .content-pick h3,
+  .home .content-pick h4 {
+    display: flex;
+    align-self: flex-start;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    width: 80%;
+  }
+  .home .content-pick .destination h2,
+  .home .content-pick .destination h3,
+  .home .content-pick .destination h4 {
+    display: flex;
+    align-self: flex-start;
+  }
+  .home .content-pick .destination h4 {
+    display: flex;
+  }
 }
 .home .content-pick .destination .btn {
   width: 80%;
@@ -267,4 +387,8 @@ img {
   background-color: #17a2b8;
   color: #ffffff;
   font-size: 1.8rem;
+}
+.home .content-pick .destination .btn:hover {
+  background-color: #ffebcd;
+  color: #17a2b8;
 }

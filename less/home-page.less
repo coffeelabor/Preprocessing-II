@@ -1,6 +1,12 @@
 .home {
   .top-content {
     border-bottom: 2px dashed @silver;
+    display: flex;
+    flex-wrap: wrap;
+    @media @mobile {
+      padding-left: 5%;
+      .mobile();
+    }
     h2 {
       padding-top: 10px;
       padding-bottom: 10px;
@@ -12,15 +18,24 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    @media @mobile {
+      .mobile();
+    }
 
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobile {
+        .mobile();
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media @mobile {
+        .mobile();
+      }
 
       img {
         border-radius: 10px;
@@ -50,6 +65,9 @@
     img {
       border-radius: 10px;
     }
+    @media @mobile {
+      .mobile();
+    }
   }
 
   .content-pick {
@@ -57,10 +75,20 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    @media @mobile {
+      .mobile();
+    }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @mobile {
+        .mobile();
+        h4 {
+          display: flex;
+        }
+        width: 80%;
+      }
       .btn {
         .button(@eastern-blue, @white);
       }
